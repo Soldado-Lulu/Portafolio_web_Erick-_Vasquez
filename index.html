@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andrés Erick Vásquez Castro — Backend & Data</title>
+  <link rel="icon" href="img/wojtek.png" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body>
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="#top">
+        <span class="brand__dot"></span>
+        <span class="brand__name">Andrés Erick</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#about" data-key="nav-about">About</a>
+        <a href="#stack" data-key="nav-stack">Stack</a>
+        <a href="#projects" data-key="nav-projects">Projects</a>
+        <a href="#contact" data-key="nav-contact">Contact</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <button class="lang-btn" id="langToggle" type="button" aria-label="Toggle language">
+          <span class="lang-btn__pill" id="langPill">ES</span>
+        </button>
+
+        <a class="icon-btn" href="resume%20Andres%20Erick%20Vasquez%20Castro.pdf" target="_blank" rel="noreferrer" aria-label="Open CV PDF">
+          <i class="fa-solid fa-file-pdf"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page" id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__content">
+        <div class="kicker" data-key="kicker">Backend • Data • QA</div>
+
+        <h1 class="hero__title">
+          <span data-key="hero-title-1">Backend Developer</span>
+          <span class="hero__title-muted" data-key="hero-title-2">& Data Analyst</span>
+        </h1>
+
+        <p class="hero__subtitle" data-key="hero-subtitle">
+          I build reliable APIs, data workflows, and metrics-driven systems. Focused on correctness, business rules, and performance.
+        </p>
+
+        <div class="typed">
+          <span class="typed__label" data-key="typed-label">Currently:</span>
+          <span id="typed-text" class="typed__text">Building REST APIs</span>
+          <span class="typed__cursor" aria-hidden="true">▍</span>
+        </div>
+
+        <div class="hero__cta">
+          <button class="btn btn--primary" id="btnCopyEmail" type="button">
+            <i class="fa-regular fa-copy"></i>
+            <span data-key="btn-copy">Copy email</span>
+          </button>
+
+          <a class="btn btn--ghost" href="#projects">
+            <i class="fa-solid fa-diagram-project"></i>
+            <span data-key="btn-projects">View projects</span>
+          </a>
+
+          <div class="hero__links">
+            <a class="link" href="https://github.com/Soldado-Lulu" target="_blank" rel="noreferrer">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a class="link" href="https://www.linkedin.com/in/andres-erick-vasquez/" target="_blank" rel="noreferrer">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="meta">
+          <div class="meta__item">
+            <span class="meta__label" data-key="meta-location-label">Location</span>
+            <span class="meta__value" data-key="meta-location-value">Bolivia • Remote</span>
+          </div>
+          <div class="meta__item">
+            <span class="meta__label" data-key="meta-focus-label">Focus</span>
+            <span class="meta__value" data-key="meta-focus-value">APIs • SQL • QA</span>
+          </div>
+          <div class="meta__item">
+            <span class="meta__label" data-key="meta-availability-label">Availability</span>
+            <span class="meta__value" data-key="meta-availability-value">Open to international</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__aside">
+        <div class="profile">
+          <img class="profile__img" src="img/wojtek.png" alt="Profile" />
+          <div class="profile__box">
+            <div class="profile__name">Andrés Erick Vásquez Castro</div>
+            <div class="profile__role" data-key="profile-role">Backend & Data • QA</div>
+            <div class="profile__chips">
+              <span class="chip">Node.js</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__title" data-key="highlights-title">Highlights</div>
+          <ul class="list">
+            <li data-key="highlights-1">Built REST APIs and SQL reporting for healthcare systems.</li>
+            <li data-key="highlights-2">Strong QA mindset: edge cases, business rules, correctness.</li>
+            <li data-key="highlights-3">Comfortable with datasets, structured validation, and metrics.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <h2 class="section__title" data-key="about-title">About</h2>
+        <p class="section__subtitle" data-key="about-subtitle">Short, recruiter-friendly summary.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <p class="p" data-key="about-p">
+            Software Engineer focused on backend development, data analysis, and QA/validation. I design reliable APIs,
+            implement business rules, validate data, and build SQL-based reporting for operational decisions.
+          </p>
+
+          <div class="callouts">
+            <div class="callout">
+              <div class="callout__k" data-key="about-callout-1-k">Strength</div>
+              <div class="callout__v" data-key="about-callout-1-v">Correctness & edge-case thinking</div>
+            </div>
+            <div class="callout">
+              <div class="callout__k" data-key="about-callout-2-k">Strength</div>
+              <div class="callout__v" data-key="about-callout-2-v">SQL, metrics and reporting</div>
+            </div>
+            <div class="callout">
+              <div class="callout__k" data-key="about-callout-3-k">Strength</div>
+              <div class="callout__v" data-key="about-callout-3-v">Clear communication & documentation</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__title" data-key="exp-title">Experience snapshot</div>
+          <div class="timeline">
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div>
+                <div class="timeline__top">
+                  <span class="timeline__role" data-key="exp-1-role">Backend Developer</span>
+                  <span class="timeline__time" data-key="exp-1-time">2025–2026</span>
+                </div>
+                <div class="timeline__org" data-key="exp-1-org">National Health Fund (CNS)</div>
+              </div>
+            </div>
+
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div>
+                <div class="timeline__top">
+                  <span class="timeline__role" data-key="exp-2-role">Freelance Developer</span>
+                  <span class="timeline__time" data-key="exp-2-time">2025–2026</span>
+                </div>
+                <div class="timeline__org" data-key="exp-2-org">Healthcare & inventory systems</div>
+              </div>
+            </div>
+
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div>
+                <div class="timeline__top">
+                  <span class="timeline__role" data-key="exp-3-role">Data QA / Annotation</span>
+                  <span class="timeline__time" data-key="exp-3-time">2025</span>
+                </div>
+                <div class="timeline__org" data-key="exp-3-org">OpenTrain / AI evaluation tasks</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="small muted" data-key="exp-note">
+            Want more details? Check projects below or open the PDF CV.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section class="section" id="stack">
+      <div class="section__head">
+        <h2 class="section__title" data-key="stack-title">Stack</h2>
+        <p class="section__subtitle" data-key="stack-subtitle">Backend-first. Practical tools I use to ship.</p>
+      </div>
+
+      <div class="stack">
+        <div class="stack__group">
+          <div class="stack__title" data-key="stack-lang">Languages</div>
+          <div class="stack__items">
+            <div class="stack-item"><img src="img/piton.png" alt="Python"><span>Python</span></div>
+            <div class="stack-item"><img src="img/js.png" alt="JavaScript"><span>JavaScript</span></div>
+            <div class="stack-item"><img src="img/sql.png" alt="SQL" onerror="this.style.display='none'"><span>SQL</span></div>
+            <div class="stack-item"><img src="img/c.png" alt="C#"><span>C#</span></div>
+          </div>
+        </div>
+
+        <div class="stack__group">
+          <div class="stack__title" data-key="stack-backend">Backend</div>
+          <div class="stack__items">
+            <div class="stack-item"><img src="img/node.png" alt="Node.js"><span>Node.js</span></div>
+            <div class="stack-item"><img src="img/react.png" alt="React"><span>React</span></div>
+          </div>
+        </div>
+
+        <div class="stack__group">
+          <div class="stack__title" data-key="stack-db">Databases</div>
+          <div class="stack__items">
+            <div class="stack-item"><img src="img/postgres.png" alt="PostgreSQL"><span>PostgreSQL</span></div>
+            <div class="stack-item"><img src="img/mongo.png" alt="MongoDB"><span>MongoDB</span></div>
+            <div class="stack-item"><img src="img/firebase.png" alt="Firebase"><span>Firebase</span></div>
+          </div>
+        </div>
+
+        <div class="stack__group">
+          <div class="stack__title" data-key="stack-tools">Tools</div>
+          <div class="stack__items">
+            <div class="stack-item"><img src="img/git.png" alt="Git"><span>Git</span></div>
+            <div class="stack-item"><img src="img/github.png" alt="GitHub"><span>GitHub</span></div>
+            <div class="stack-item"><img src="img/trello.png" alt="Trello"><span>Trello</span></div>
+            <div class="stack-item"><img src="img/n.png" alt="Notion"><span>Notion</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card--thin">
+        <div class="card__title" data-key="stack-note-title">What I optimize for</div>
+        <div class="pill-row">
+          <span class="pill" data-key="pill-1">Data correctness</span>
+          <span class="pill" data-key="pill-2">Clear business rules</span>
+          <span class="pill" data-key="pill-3">Reliable APIs</span>
+          <span class="pill" data-key="pill-4">Maintainability</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section__head section__head--row">
+        <div>
+          <h2 class="section__title" data-key="projects-title">Projects</h2>
+          <p class="section__subtitle" data-key="projects-subtitle">
+            Backend-oriented projects with clear problem → solution → impact.
+          </p>
+        </div>
+
+        <div class="filters">
+          <button class="filter-btn is-active" data-filter="all" data-key="filter-all">All</button>
+          <button class="filter-btn" data-filter="backend" data-key="filter-backend">Backend</button>
+          <button class="filter-btn" data-filter="data" data-key="filter-data">Data</button>
+          <button class="filter-btn" data-filter="qa" data-key="filter-qa">QA</button>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid"></div>
+
+    
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="section__head">
+        <h2 class="section__title" data-key="contact-title">Contact</h2>
+        <p class="section__subtitle" data-key="contact-subtitle">Fastest way to reach me is email.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="contact-row">
+            <div>
+              <div class="muted" data-key="contact-email-label">Email</div>
+              <div class="contact-value" id="emailValue">wojtekvasquez@gmail.com</div>
+            </div>
+            <button class="btn btn--ghost" type="button" id="btnCopyEmail2">
+              <i class="fa-regular fa-copy"></i> <span data-key="btn-copy">Copy email</span>
+            </button>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="contact-links">
+            <a class="link" href="https://github.com/Soldado-Lulu" target="_blank" rel="noreferrer">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a class="link" href="https://www.linkedin.com/in/andres-erick-vasquez/" target="_blank" rel="noreferrer">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="small muted" data-key="contact-note">
+            If you want, I can share code samples, API docs, or a quick walkthrough of my work.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__title" data-key="pitch-title">One-line pitch</div>
+          <p class="p" data-key="pitch">
+            Backend engineer with a QA mindset — I build reliable APIs and SQL reporting that teams can trust.
+          </p>
+
+          <div class="divider"></div>
+
+          <div class="card__title" data-key="availability-title">Availability</div>
+          <div class="pill-row">
+            <span class="pill" data-key="avail-1">Remote</span>
+            <span class="pill" data-key="avail-2">International</span>
+            <span class="pill" data-key="avail-3">Contract / Part-time</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <span>© <span id="year"></span> Andrés Erick Vásquez Castro</span>
+        <span class="muted">Backend • Data • QA</span>
+      </div>
+    </footer>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite">Copied!</div>
+
+  <!-- Project Modal -->
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close="true"></div>
+
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" type="button" aria-label="Close" data-close="true">✕</button>
+
+      <div class="modal__header">
+        <div class="modal__kicker" id="modalType">BACKEND</div>
+        <h3 class="modal__title" id="modalTitle">Project title</h3>
+        <p class="modal__subtitle" id="modalSubtitle">Short summary</p>
+      </div>
+
+      <div class="modal__gallery" id="modalGallery"></div>
+
+      <div class="modal__section">
+        <div class="modal__sectionTitle" data-key="modal-details-title">Details</div>
+        <div class="modal__details" id="modalDetails"></div>
+      </div>
+
+      <div class="modal__section">
+        <div class="modal__sectionTitle" data-key="modal-tech-title">Tech</div>
+        <div class="modal__tags" id="modalTags"></div>
+      </div>
+
+      <div class="modal__footer" id="modalLinks"></div>
+    </div>
+  </div>
+
+  <script src="lang.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
